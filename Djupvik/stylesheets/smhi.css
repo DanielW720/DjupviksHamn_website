@@ -1,0 +1,10 @@
+/* This sheet contains CSS for the smhi-widget (gastplats.html) */
+
+@media (min-width: 320px) and (max-width: 426px) {
+    /* Mobile screens */
+
+    .vaderdata td:nth-of-type(1):before { content: "Kl"; font-weight: bold;}
+    .vaderdata td:nth-of-type(2):before { content: "Temp"; font-weight: bold;}
+    .vaderdata td:nth-of-type(3):before { content: "Vind"; font-weight: bold;}
+    .vaderdata td:nth-of-type(4):before { content: "Himmel"; font-weight: bold;}
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+
+<head>
+    <title>Gästplatser - Djupviks hamn</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../stylesheets/reset.css">
+    <link rel="stylesheet" href="../stylesheets/index.css">
+    <link href="../stylesheets/larger_screens.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/Extra/hamn.jpg" type="image/jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="description" content="BESKRIVNING AV DJUPVIKS ..."> <!-- ÄNDRA-->
+</head>
+
+<body>
+<div id="container">
+    <div id="top_container">
+        <header>
+            <img id="header_img" src="../images/Extra/solnedgang.jpg" alt="Välkomnande bild på solnedgång vid hamnen">
+            <h1>Djupviks hamn</h1>
+        </header>
+    
+        <!-- Two navigation for two different styles-->
+        <div class="nav_regular">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Hem</a></li>
+                    <li><a href="gastplats.html" class="activePage">Gästplatser</a></li>
+                    <li><a href="turistmal.html">Turistmål</a></li>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="english.html">English</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="dropdown">
+            <button>Sidor</button>
+            <div class="dropdown-content">
+                <a href="../index.html">Hem</a>
+                <a href="gastplats.html" class="activePage">Gästplatser</a>
+                <a href="turistmal.html">Turistmål</a>
+                <a href="historia.html">Historia</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="english.html">English</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section>
+            <h2>Gästhamnen</h2>
+            <p>
+                Gästbåtar är hjärtligt välkomna! 
+                <br><br>
+                Vid normalvattendjup är djupet 3 meter i huvuddelen av hamnen. Vatten och el finns 
+                utdraget på kajerna. I land kan vi erbjuda ett modernt servicehus med WC, dusch och 
+                tvättmaskin.
+                <br><br>
+                Ring gärna hamnfogden för att få reda på aktuellt läge.
+            </p>
+
+            <picture>
+                <source media="(min-width: 426px)" srcset="../images/D-8medium.jpg" />
+                <img src="../images/D-8min.jpg" alt="Båt vid bryggan">
+            </picture>
+            
+            <p id="prislista">
+                Dygnshyra 150:- /dygn* <br>
+                El-anslutning 50:-/dygn 
+            </p>
+            <p id="prisasterisk">
+                *inkluderat kort för tillträde till servicehuset och 20:- för två duschar
+            </p>
+            <p>
+                Hamnfogde Bo Lautin Mobil 0707 - 92 03 10
+            </p>
+
+            <hr />
+            
+            <h2>Väder</h2>
+
+            <!-- Vädertabell-->
+            <div id="smhi-widget">
+                <script src="../JS/index.js" type="module"></script>
+                <link rel="stylesheet" href="../stylesheets/smhi.css">
+                <!--JavaScript här-->
+            </div>
+
+            <hr>
+
+            <picture>
+                <source media="(min-width: 426px)" srcset="../images/D-9medium.jpg"/>
+                <img src="../images/D-9min.jpg" alt="Djupviks strand en solig dag">
+            </picture>
+                
+            <footer>© 2021 Djupviks hamn</footer>
+        </section>
+    </main>
+</div>
+</body>
+
+</html>

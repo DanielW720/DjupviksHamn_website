@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+
+<head>
+    <title>Kontakt - Djupviks hamn</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../stylesheets/reset.css">
+    <link rel="stylesheet" href="../stylesheets/index.css">
+    <link href="../stylesheets/larger_screens.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/Extra/hamn.jpg" type="image/jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="description" content="BESKRIVNING AV DJUPVIKS ..."> <!-- ÄNDRA-->
+</head>
+
+<body>
+<div id="container">
+    <div id="top_container">
+        <header>
+            <img id="header_img" src="../images/Extra/solnedgang.jpg" alt="Välkomnande bild på solnedgång vid hamnen">
+            <h1>Djupviks hamn</h1>
+        </header>
+
+        <!-- Two navigation for two different styles-->
+        <div class="nav_regular">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Hem</a></li>
+                    <li><a href="gastplats.html">Gästplatser</a></li>
+                    <li><a href="turistmal.html">Turistmål</a></li>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="kontakt.html" class="activePage">Kontakt</a></li>
+                    <li><a href="english.html">English</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="dropdown">
+            <button>Sidor</button>
+            <div class="dropdown-content">
+                <a href="../index.html">Hem</a>
+                <a href="gastplats.html">Gästplatser</a>
+                <a href="turistmal.html">Turistmål</a>
+                <a href="historia.html">Historia</a>
+                <a href="kontakt.html" class="activePage">Kontakt</a>
+                <a href="english.html">English</a>
+            </div>
+        </div>
+    </div>
+    
+    <main>
+        <section>
+            <h3>Medlemmar</h3>
+            <p>
+                Se <a href="medlemmar.html">lista över medlemmar</a>.
+            </p>
+
+            <h3>Kontaktuppgifter</h3>
+            <p>
+                Hamnfogde Bo Lautin, mobil 0707-920310
+                <br><br>
+                Djupviks hamnförening <br>
+                c/o Ekholm <br>
+                Eksta Hägur 170 <br>
+                623 54 Klintehamn
+            </p>
+
+            <h3>Kontaktformulär</h3>
+            
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend id="head_legend">Vänligen fyll i följande</legend>
+                    <p>
+                        <label for="Rubrik">Rubrik:</label>
+                        <input type="text" name="rubrik" id="Rubrik" required>
+                    </p>
+
+                    <p>
+                        <label for="Beskrivning">Beskrivning:</label>
+                        <textarea name="beskrivning" id="Beskrivning" cols="30" rows="5" required></textarea>
+                    </p>
+
+                    <select name="gällande" id="gällande" required>
+                        <option value="" disabled selected>Gällande:</option>
+                        <option value="Båtplats">Båtplats</option>
+                        <option value="Medlem">Medlem</option>
+                        <option value="Övrigt">Övrigt</option>
+                    </select>
+                    
+                    <select name="kontakt" id="kontakt" required>
+                        <option value="" disabled selected>Kontakt:</option>
+                        <option value="Mail">Mail</option>
+                        <option value="Telefon">Telefon</option>
+                        <option value="Ingen">Ingen</option>
+                    </select>
+
+                    <p>
+                        <label for="Telefon">Telefon:</label>
+                        <input type="tel" name="telefon" id="Telefon" pattern="[0-9]{4}-[0-9]{6}" required>
+                    </p>
+
+                    <p>
+                        <label for="Mail">Mail:</label>
+                        <input type="email" name="mail" id="Mail" required>
+                    </p>
+
+                    <p id="submit">
+                        <input type="submit" value="Skicka">
+                    </p> 
+                </fieldset>
+            </form>
+            
+            <footer>© 2021 Djupviks hamn</footer>
+        </section>
+    </main>
+</div>
+</body>
+</html>
